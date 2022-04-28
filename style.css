@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    color: wheat;
+    background: #C0B4B0;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.main-container{
+    /* border: 1px solid red; */
+    width: 100vw;
+    width: 100%;
+    height: auto;
+}
+.main-container h1{
+    /* border: 1px solid green; */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1C1D1E;;
+    font-family: 'Roboto Slab';
+}
+
+.main-container  .container{
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.main-container  .container .card{
+    /* border: 1px solid red; */
+    height: auto;
+    width:50%; 
+    margin: 10px auto;
+    background: #1C1D1E;
+    border-radius: 10px;
+}
+
+.main-container  .container .card .timeline{
+    /* border: 1px solid grey; */
+    width: 100%;
+}
+
+.main-container  .container .card .timeline .profile-image{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+.main-container  .container .card .timeline .profile-image img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.main-container  .container .card .timeline .profile-image img:hover{
+    opacity: 0.8;
+}
+.main-container  .container .card .timeline .profile-image .date{
+    display: block;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.main-container  .container .card .timeline .profile-image .date h3{
+    /* border: 1px solid white; */
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+    color: whitesmoke;
+  
+}
+.main-container  .container .card .timeline .profile-image .date h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-container  .container .card .timeline .profile-image .date span{
+    /* border: 1px solid white; */
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: #C0B4B0;
+
+}
+.main-container  .container .card .timeline .profile-image .date span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-container  .container .card .timeline .profile-image i{
+    cursor: pointer;
+    font-size:1.4rem ;
+}
+
+.main-container  .container .card .timeline .tagline{
+    /* border: 1px solid green; */
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+}
+
+.main-container  .container .card .Post-image{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 400px;
+}
+
+.main-container  .container .card .Post-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+.main-container  .container .card .bottom{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.main-container  .container .card .bottom h3{
+    font-size: 1.0rem;
+    font-weight: 400;
+    text-align: right;
+    padding: 10px 15px;
+}
+.main-container  .container .card .bottom .liner{
+    content: '';
+    border: 1px solid wheat;
+    opacity: 0.4;
+    width: 95%;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.main-container  .container .card .bottom #posts {
+    /* border: 1px solid green; */
+    width: 85%;
+    margin: 0 auto;
+    
+}
+
+.main-container  .container .card .bottom #posts div{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #3a3b3b;
+    height: 100px;
+    width: 100%;
+    margin: 10px 0;
+    background: #3a3b3b;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.main-container  .container .card .bottom #posts div p{
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 5px 5px;
+}
+.main-container  .container .card .bottom #posts div .options{
+    display: flex;
+    gap: 13px;
+    margin: auto 5px;
+    /* border: 1px solid red; */
+}
+
+.main-container  .container .card .bottom #posts div .options i{
+    cursor: pointer;
+}
+
+.main-container  .container .card .bottom-bottom{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: 25px 0;
+   
+}
+
+.main-container  .container .card .bottom-bottom form{
+    /* border: 1px solid green; */
+    width: 85%;
+    margin: 0px auto;
+}
+
+.main-container  .container .card .bottom-bottom form input{
+    width: 100%;
+    padding: 11px 10px;
+    border-radius: 10px;
+    background: #3a3b3b;
+    border: none;
+    
+}
+.main-container  .container .card .bottom-bottom form input:focus{
+    outline: none;
+    color: wheat;
+    border: 1px solid red;
+    font-weight: 400;
+}
+.main-container  .container .card .bottom-bottom form input::placeholder{
+    font-size: 0.95rem;
+    color: wheat;
+    opacity: 0.5;
+}
+
+.main-container  .container .card .bottom-bottom form #msg{
+    color: red;
+    /* margin: 3px 0; */
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+.main-container  .container .card .bottom-bottom form button{
+    padding: 8px 30px;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 500;
+    background:#3a3b3b;
+    color:wheat;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.main-container  .container .card .bottom-bottom form button:hover{
+    background-color: wheat;
+    color:#3a3b3b ;
+    transition: all 0.25s;
+}
